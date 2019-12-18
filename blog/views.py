@@ -8,7 +8,6 @@ from markdown.extensions.toc import TocExtension
 from django.http import HttpResponse
 
 
-
 # def index(request):
 #     return HttpResponse("欢迎访问我的博客首页！")
 def index(request):
@@ -18,6 +17,7 @@ def index(request):
     #     'title': '我的博客首页',
     #     'welcome': '欢迎访问我的博客首页'
     # })
+
 
 def detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
